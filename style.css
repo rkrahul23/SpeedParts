@@ -262,25 +262,41 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure no horizontal scrolling */
+html, body {
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Prevent oversized container elements */
+.container, .section-title, .process-container, .process-step {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .section-title h2 {
         font-size: 2rem;
     }
 
     .process-container {
-        padding: 0 10px;
-    }
-    
-    .process-container,
-    .process-step {
-        max-width: 100%;
-        overflow-x: hidden;
+        padding: 0 5%;
     }
 }
 
 @media (max-width: 480px) {
     .process-step {
-        padding: 15px;
+        padding: 10px;
     }
 
     .process-step h3 {
@@ -292,7 +308,7 @@ html, body {
     }
 
     .process-container {
-        padding: 0 5px;
+        padding: 0 2%;
     }
 }
   
