@@ -251,30 +251,51 @@
     line-height: 1.6; /* Improved line spacing for clarity */
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
     .section-title h2 {
-        font-size: 2rem; /* Smaller font size for mobile responsiveness */
+        font-size: 2rem;
     }
 
     .process-container {
-        padding: 0 10px; /* Reduced padding on smaller screens */
+        padding: 0 10px;
+    }
+    
+    .process-container,
+    .process-step {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
 @media (max-width: 480px) {
     .process-step {
-        padding: 15px; /* Reduced padding for smaller screens */
+        padding: 15px;
     }
 
     .process-step h3 {
-        font-size: 1.2rem; /* Smaller heading size on mobile */
+        font-size: 1.2rem;
     }
 
     .process-step p {
-        font-size: 1rem; /* Adjusted font size for better readability on mobile */
+        font-size: 1rem;
+    }
+
+    .process-container {
+        padding: 0 5px;
     }
 }
-
+  
 
         
         /* Parts Section */
